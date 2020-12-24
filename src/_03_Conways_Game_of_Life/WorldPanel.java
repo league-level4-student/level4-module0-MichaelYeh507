@@ -200,7 +200,7 @@ public class WorldPanel extends JPanel implements MouseListener, ActionListener 
 	public void actionPerformed(ActionEvent e) {
 		step();		
 	}
-}
+
 
 
 public int leftNeighbor(int x, int y  ) {
