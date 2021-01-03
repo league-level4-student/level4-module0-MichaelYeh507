@@ -30,7 +30,7 @@ public class MazeMaker{
 		return maze;
 	}
 
-	//6. Complete the selectNextPathMethod
+	//6. Complete the selectPathMethod
 	private static void selectNextPath(Cell currentCell) {
 		//A. mark cell as visited
 		currentCell.setBeenVisited(true);
@@ -97,7 +97,7 @@ public class MazeMaker{
 	//8. Complete the getUnvisitedNeighbors method
 	//   Any unvisited neighbor of the passed in cell gets added
 	//   to the ArrayList
-	private static ArrayList<Cell> getUnvisitedNeighbors(Cell c) {
+	private static ArrayList<Cell> getUnvistited(Cell c) {
 		ArrayList<Cell> holder = new ArrayList<Cell>();
 		if(c.getX() < width-1) {
 			if(!Maze.cells[c.getX()+1][c.getY()].hasBeenVisited()) {
